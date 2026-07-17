@@ -4,5 +4,6 @@ int main() {
 	printf("%d",20+40);
 	printf("%d",30+60);
 	printf("%d",50+50);
+	printf("%d",60+60);
 	
    }
