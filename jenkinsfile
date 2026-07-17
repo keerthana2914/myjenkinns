@@ -7,25 +7,25 @@ pipeline {
             steps {
                 git branch: 'master',
                     credentialsId: 'github-ssh',
-                    url: 'git@github.com:keerthana2914/myproject.git'
+                    url: 'git@github.com:keerthana2914/myjenkinns.git'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'gcc hello.c -o hello'
+                sh 'gcc add.c -o add'
             }
         }
 
         stage('Run') {
             steps {
-                sh './hello'
+                sh './add'
             }
         }
 
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'hello', fingerprint: true
+                archiveArtifacts artifacts: 'add', fingerprint: true
             }
         }
     }
