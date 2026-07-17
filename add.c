@@ -5,5 +5,6 @@ int main() {
 	printf("%d",30+60);
 	printf("%d",50+50);
 	printf("%d",60+60);
+	printf("try to push to the another repo");
 	
    }
